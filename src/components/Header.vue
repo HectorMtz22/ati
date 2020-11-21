@@ -5,13 +5,13 @@
         <input type="checkbox" class="toggler" v-on:click="toggle" />
         <div class="hamburger"><div></div></div>
       </main>
-      <h2>Desempleo en jóvenes</h2>
+		  <router-link to="/"><h2>Desempleo en jóvenes</h2></router-link>
     </header>
     <nav v-bind:class="{ headerChecked: headerChecked }">
-      <a href="#">Inicio</a>
-      <a href="#">¿Qué es el desempleo?</a>
-      <a href="#">Factores</a>
-      <a href="#">Posibles Soluciones</a>
+		  <router-link to="/">Inicio</router-link>
+		  <router-link to="/definicion">¿Qué es el desempleo?</router-link>
+		  <router-link to="/factores">Factores</router-link>
+		  <router-link to="/soluciones">Posibles Soluciones</router-link>
     </nav>
   </div>
 </template>

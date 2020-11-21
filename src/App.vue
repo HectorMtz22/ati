@@ -1,8 +1,12 @@
 <template>
   <div id="app">
     <Header />
-    <Banner />
     <Footer />
+		<div id="nav">
+		  <router-link to="/">Home</router-link> |
+			<router-link to="/about">About</router-link>
+		</div>
+		<router-view />
   </div>
 </template>
 
@@ -16,7 +20,7 @@ export default {
   components: {
     Header,
     Footer,
-    Banner
+    Banner,
   }
 };
 </script>
@@ -34,7 +38,7 @@ export default {
   --c1: #3699d6;
   --c2: #2090d6;
   --c3: #67d62b;
-  --c3-transparent: #67d62b99;
+  --c3-transparent: #67d62bcc;
   --c4: #d68a20;
   --c5: #b54eb5;
 }
@@ -44,5 +48,8 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+html {
+	margin-bottom: 50px;
 }
 </style>
