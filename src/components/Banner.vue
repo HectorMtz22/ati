@@ -43,12 +43,34 @@ export default {
 		color: #fff;
 	}
 }
+h1 {
+	font-size: 2em;
+	animation: h1-title 5s ease infinite;
+}
 
-$columns: 2;
+@keyframes h1-title {
+0%, 100% {
+	transform: scale(1.2);
+}
+50% {
+	transform: scale(1);
+}
+}
+
+$columns: 4;
 
 @for $i from 1 through $columns {
 	.banner-#{$i}::before {
 		background-image: url("../assets/banner/banner-#{$i}.jpg");
+	}
+}
+
+@media screen and (max-width: 540px) {
+	h1 {
+		font-size: 1.1em;
+	}
+	.banner, .banner .content {
+		height: 50vh;
 	}
 }
 </style>

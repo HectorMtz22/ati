@@ -52,4 +52,14 @@ a {
 html {
 	margin-bottom: 50px;
 }
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: #eee;
+}
+::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(to top, var(--c2), var(--c3));
+}
+::-webkit-scrollbar-button {
+	background-color: var(--c3);
+}
 </style>

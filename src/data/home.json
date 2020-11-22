@@ -1,0 +1,19 @@
+{
+  "paragraph": [
+    {
+      "title": "El desempleo",
+      "content": [
+        "En los últimos años, hemos visto un incremento acelerado de desempleo para los egresados universitarios, una gran cantidad de titulados para una cantidad baja de oportunidades laborales. Es por eso por lo que nosotros, como universitarios, hemos seleccionado esta problemática para analizarla y estudiarla con el fin de mostrar a que se enfrentan los egresados universitarios en México."
+      ]
+    },
+    {
+      "title": "Esto es un título",
+      "content": [
+        "Esto es un contenido",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque arcu velit, fermentum eget purus id, rutrum posuere quam. Sed sollicitudin, ex sed congue semper, leo libero pellentesque velit, blandit molestie ante justo ac tortor. Mauris mattis lorem vel commodo mollis. Maecenas tincidunt purus quis arcu vulputate hendrerit. Cras molestie lacinia urna, ut viverra turpis feugiat vel. Mauris vitae nulla id neque euismod pretium at ut justo. Nunc nulla velit, pretium ut sapien eu, pharetra eleifend dolor. Aliquam sed urna metus. Nam ante lectus, semper at velit nec, consectetur posuere odio.",
+        "Suspendisse vitae nibh eget justo dignissim ullamcorper. Morbi vehicula tristique dui vel dapibus. Cras venenatis arcu non tempor finibus. Sed erat turpis, tincidunt a ultricies eu, accumsan eget ex. Vivamus in arcu arcu. Vivamus pretium nulla vitae euismod interdum. Aenean vehicula laoreet mauris, mattis sagittis nunc condimentum et."
+      ]
+    }
+  ],
+  "img": ["@/assets/banner/banner-1.jpg"]
+}
