@@ -41,7 +41,7 @@ header {
   background: var(--c1);
   box-shadow: 0px 1px 5px var(--c2);
   color: #fff;
-  padding: 0px 20px;
+  padding: $margin;
   display: grid;
   grid-template-columns: 40px 1fr;
   z-index: 3;

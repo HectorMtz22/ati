@@ -1,0 +1,12 @@
+{
+  "paragraph": [
+    {
+      "title": "¿Qué es el desempleo?",
+      "content": [
+        "Llamamos desempleo la situación en la que a un grupo de personas en edad de trabajar no tienen empleo aun cuando se encuentran disponibles para trabajar y han buscado oportunidades durante un largo periodo.  ",
+        "Se dice también que es un desajuste en el mercado laboral, donde la oferta de trabajo por parte de los trabajadores es superior a la demanda de trabajo por parte de las empresas. Cuando existe gente que no tiene empleo se conoce como desempleo o paro. "
+      ]
+    }
+  ],
+  "img": ["@/assets/banner/banner-1.jpg"]
+}

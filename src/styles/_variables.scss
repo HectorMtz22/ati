@@ -1,2 +1,8 @@
 $margin: 2px 5%;
 $transition: all 500ms ease;
+$widthContent: 80%;
+$mediaScreen: max-width 540px;
+
+@media screen and (max-width: 540px) {
+  $widthContent: 90%;
+}
