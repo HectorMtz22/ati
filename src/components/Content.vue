@@ -6,16 +6,21 @@
 				<p>{{content}}</p>
 			</div>
 		</section>
-		<YoutubePlayer class="video" :videoId="videoId"/>
+		<div>
+			<YoutubePlayer class="video" :videoId="videoId"/>
+			<NavBar />
+		</div>
 	</main>
 </template>
 
 <script>
 import YoutubePlayer from '@/components/YoutubePlayer.vue';
+import NavBar from '@/components/NavBar.vue';
 export default {
 	name: "Content",
 	components: {
-		YoutubePlayer
+		YoutubePlayer,
+		NavBar
 	},
 	props: {
 		paragraph: Array,
@@ -39,11 +44,12 @@ export default {
 			margin: 10px 0px;
 		}
 	}
-	.video {
+	div {
 		grid-column: 2 / 3;
 		grid-row: 1 / 2;
 	}
 }
+
 
 @media screen and (max-width: 540px) {
 	.grid {
