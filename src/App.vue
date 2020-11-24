@@ -62,4 +62,8 @@ html {
 ::-webkit-scrollbar-button {
 	background-color: var(--c3);
 }
+.datos {
+	width: $widthContent;
+	margin: 20px auto;
+}
 </style>
