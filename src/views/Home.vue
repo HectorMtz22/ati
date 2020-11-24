@@ -3,6 +3,10 @@
     <Banner v-bind:text="text" img="banner-1"/>
 		<Content :paragraph="paragraph" :videoId="videoId"/>
 		<Prezi :preziId="preziId" />
+    <Banner v-bind:text="textDatos" img="banner-data"/>
+		<main class="datos">
+		<iframe src='https://tradingeconomics.com/embed/?s=mxueunsa&v=202011232300v20200908&h=300&w=600&ref=/mexico/unemployment-rate' height='300' width='600'  frameborder='0' scrolling='no'></iframe>
+		<br />source: <a href='https://tradingeconomics.com/mexico/unemployment-rate'>tradingeconomics.com</a>	</main>
   </div>
 </template>
 
@@ -20,6 +24,7 @@ export default {
 		return {
 			paragraph,
 			img,
+			textDatos: "Gráficas y datos",
 			text: "Desempleo en los Jóvenes",
 			preziId: "iU3hNsYUbXoKaQ700RZi",
 			videoId: "vgSlmXXtNNM?start=10"
@@ -35,6 +40,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.datos {
+	width: $widthContent;
+	margin: 20px auto;
+}
 
 </style>

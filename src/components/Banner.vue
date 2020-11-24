@@ -65,6 +65,10 @@ $columns: 4;
 	}
 }
 
+.banner-data::before {
+	background-image: url("../assets/banner/banner-data.jpg");
+}
+
 @media screen and (max-width: 540px) {
 	h1 {
 		font-size: 1.1em;
