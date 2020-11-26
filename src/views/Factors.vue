@@ -1,7 +1,7 @@
 <template>
 	<div>
     <Banner v-bind:text="text" img="banner-3"/>
-		<Content :paragraph="paragraph" />
+		<Content :img="img" :paragraph="paragraph" />
 	</div>
 </template>
 
@@ -14,6 +14,7 @@ export default {
 	data() {
 		return {
 			paragraph,
+			img,
 			text: "Factores",
 		}
 	},

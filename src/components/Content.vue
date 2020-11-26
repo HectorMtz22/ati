@@ -1,13 +1,16 @@
 <template>
 	<main class="grid">
-		<section v-for="(p, index) in paragraph" v-bind:key="index" >
+		<section class="paragraphs" v-for="(p, index) in paragraph" v-bind:key="index" >
 			<h3>{{p.title}}</h3>
 			<div v-for="(content, index) in p.content" v-bind:key="index">
 				<p>{{content}}</p>
 			</div>
 		</section>
-		<div>
-			<YoutubePlayer class="video" :videoId="videoId"/>
+		<section v-for="(i, index) in img" v-bind:key="index" >
+			<img :src="i" alt="Imagen" loading="lazy">
+		</section>
+	<div>
+		<YoutubePlayer class="video" :videoId="videoId"/>
 			<NavBar />
 		</div>
 	</main>
@@ -24,6 +27,7 @@ export default {
 	},
 	props: {
 		paragraph: Array,
+		img: Array,
 		videoId: String
 	}
 }
@@ -36,7 +40,7 @@ export default {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
-	section {
+	.paragraphs {
 		grid-column: 1 / 2;
 		/* grid-row: 1/-1; */
 		text-align: justify;

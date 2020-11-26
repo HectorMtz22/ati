@@ -1,9 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Definitions from "../views/Definitions.vue";
-import Factors from "../views/Factors.vue";
-import Solutions from "../views/Solutions.vue";
 
 Vue.use(VueRouter);
 
@@ -16,17 +13,17 @@ const routes = [
   {
     path: "/definicion",
     name: "Definicion",
-    component: Definitions,
+    component: () => import("../views/Definitions"),
   },
   {
     path: "/factores",
     name: "Factores",
-    component: Factors,
+    component: () => import("../views/Factors"),
   },
   {
     path: "/soluciones",
     name: "Soluciones",
-    component: Solutions,
+    component: () => import("../views/Solutions"),
   },
   {
     path: "/about",

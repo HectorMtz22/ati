@@ -9,5 +9,5 @@
       ]
     }
   ],
-  "img": ["@/assets/banner/banner-1.jpg"]
+  "img": ["/img/intro.png"]
 }

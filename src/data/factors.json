@@ -10,5 +10,5 @@
       ]
     }
   ],
-  "img": ["@/assets/banner/banner-1.jpg"]
+  "img": ["/img/factores-1.png", "/img/factores-2.jpg"]
 }

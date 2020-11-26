@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Banner v-bind:text="text" img="banner-1"/>
-		<Content :paragraph="paragraph" :videoId="videoId"/>
+		<Content :img="img" :paragraph="paragraph" :videoId="videoId"/>
 		<Prezi :preziId="preziId" />
     <Banner v-bind:text="textDatos" img="banner-data"/>
 		<main class="datos">

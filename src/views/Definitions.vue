@@ -1,7 +1,7 @@
 <template>
 	<div>
     <Banner v-bind:text="text" img="banner-2"/>
-		<Content :paragraph="paragraph" />
+		<Content :img="img" :paragraph="paragraph" />
 		<div class="datos">
 		<iframe width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMWU3YzY4YmItMTg4Yi00YzFhLTgzNGYtNzIwMjMzMDEzM2I1IiwidCI6ImNhY2E5MDExLTdiNmEtNDRkZS04NjFmLTA5NWEyY2E4ODNiNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
 		</div>
@@ -17,7 +17,8 @@ export default {
 	data() {
 		return {
 			text: "¿Qué es el desempleo?",
-			paragraph
+			paragraph,
+			img
 		}
 	},
 	components: {
