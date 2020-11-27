@@ -57,7 +57,7 @@ h1 {
 }
 }
 
-$columns: 4;
+$columns: 5;
 
 @for $i from 1 through $columns {
 	.banner-#{$i}::before {

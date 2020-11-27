@@ -3,6 +3,7 @@
 		<h4>Menú de navegación</h4>
 		<section>
 			<router-link to="/">
+				<font-awesome-icon :icon="['fa', 'home']" />
 				<span>
 					ir a inicio
 				</span>
@@ -10,6 +11,7 @@
 		</section>
 		<section>
 			<router-link to="/definicion">
+				<font-awesome-icon :icon="['fa', 'book']" />
 				<span>
 					¿Qué es el desempleo?	
 				</span>
@@ -17,6 +19,7 @@
 		</section>
 		<section>
 			<router-link to="/factores">
+				<font-awesome-icon :icon="['fa', 'street-view']" />
 				<span>
 					Factores	
 				</span>
@@ -24,11 +27,21 @@
 		</section>
 		<section>
 			<router-link to="/soluciones">
+				<font-awesome-icon :icon="['fa', 'poll']" />
 				<span>
 					Soluciones
 				</span>
 			</router-link>
 		</section>
+		<section>
+			<router-link to="/recursos">
+				<font-awesome-icon :icon="['fa', 'file-code']" />
+				<span>
+					Recursos
+				</span>
+			</router-link>
+		</section>
+
 	</main>
 </template>
 
@@ -74,10 +87,15 @@
 			&::after {
 				transform: translateX(100%);
 			}
+			a {
+				transform: scale(1.5);
+			}
 		}
 		a {
 			display: block;
 			padding: 10px;
+			transform-origin: left;
+			transition: $transition;
 		}	
 	}
 }

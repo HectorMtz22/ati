@@ -52,6 +52,14 @@ export default {
 		grid-column: 2 / 3;
 		grid-row: 1 / 2;
 	}
+	img {
+		height: 300px;
+		object-fit: cover;
+		transition: $transition;
+		&:hover {
+			filter: blur(2px);
+		}
+	}
 }
 
 

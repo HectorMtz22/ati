@@ -8,10 +8,46 @@
 		  <router-link to="/"><h2>Desempleo en jóvenes</h2></router-link>
     </header>
     <nav v-bind:class="{ headerChecked: headerChecked }">
-		  <router-link to="/">Inicio</router-link>
-		  <router-link to="/definicion">¿Qué es el desempleo?</router-link>
-		  <router-link to="/factores">Factores</router-link>
-		  <router-link to="/soluciones">Posibles Soluciones</router-link>
+		  <section>
+			<router-link to="/">
+				<font-awesome-icon :icon="['fa', 'home']" />
+				<span>
+					ir a inicio
+				</span>
+			</router-link>
+		</section>
+		<section>
+			<router-link to="/definicion">
+				<font-awesome-icon :icon="['fa', 'book']" />
+				<span>
+					¿Qué es el desempleo?	
+				</span>
+			</router-link>
+		</section>
+		<section>
+			<router-link to="/factores">
+				<font-awesome-icon :icon="['fa', 'street-view']" />
+				<span>
+					Factores	
+				</span>
+			</router-link>
+		</section>
+		<section>
+			<router-link to="/soluciones">
+				<font-awesome-icon :icon="['fa', 'poll']" />
+				<span>
+					Soluciones
+				</span>
+			</router-link>
+		</section>
+		<section>
+			<router-link to="/recursos">
+				<font-awesome-icon :icon="['fa', 'file-code']" />
+				<span>
+					Recursos
+				</span>
+			</router-link>
+		</section>
     </nav>
   </div>
 </template>
@@ -149,8 +185,12 @@ nav {
   color: #fff;
   font-size: 1.4em;
   transition: $transition;
-  a {
+  section {
     padding: 20px;
+		transition: $transition;
+		&:hover {
+			transform: scale(1.1);
+		}
   }
 }
 
