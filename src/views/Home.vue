@@ -18,7 +18,7 @@ import Banner from '@/components/Banner.vue'
 import Content from '@/components/Content.vue'
 import Prezi from '@/components/Prezi.vue'
 import YoutubePlayer from '@/components/YoutubePlayer.vue'
-import { paragraph, img } from '@/data/home.json'
+import { paragraph, img, preziId, videoId } from '@/data/home.json'
 
 export default {
   name: "Home",
@@ -28,8 +28,8 @@ export default {
 			img,
 			textDatos: "Gráficas y datos",
 			text: "Desempleo en los Jóvenes",
-			preziId: "iU3hNsYUbXoKaQ700RZi",
-			videoId: "vgSlmXXtNNM?start=10"
+			preziId,
+			videoId		
 		}
 	},
   components: {

@@ -1,14 +1,14 @@
 <template>
 	<div>
     <Banner v-bind:text="text" img="banner-3"/>
-		<Content :img="img" :paragraph="paragraph" />
+		<Content :videoId="videoId" :img="img" :paragraph="paragraph" />
 	</div>
 </template>
 
 <script>
 import Banner from '@/components/Banner';
 import Content from '@/components/Content';
-import { paragraph, img } from '@/data/factors.json';
+import { paragraph, img, videoId } from '@/data/factors.json';
 export default {
 	name: "Factors",
 	data() {
@@ -16,6 +16,7 @@ export default {
 			paragraph,
 			img,
 			text: "Factores",
+			videoId
 		}
 	},
 	components: {

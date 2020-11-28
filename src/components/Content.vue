@@ -7,7 +7,7 @@
 			</div>
 		</section>
 		<section v-for="(i, index) in img" v-bind:key="index" >
-			<img :src="i" alt="Imagen" loading="lazy">
+			<img :src="path + i" alt="Imagen" loading="lazy">
 		</section>
 	<div>
 		<YoutubePlayer class="video" :videoId="videoId"/>
@@ -29,6 +29,15 @@ export default {
 		paragraph: Array,
 		img: Array,
 		videoId: String
+	},
+	computed: {
+		path: () => {
+			if (process.env.NODE_ENV === "production")	{
+				return "/ati"
+			} else {
+				return ""	
+			}
+		}
 	}
 }
 </script>

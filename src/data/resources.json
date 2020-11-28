@@ -1,8 +1,32 @@
 {
   "resources": [
-    "/documents/PIA_ATI.docx",
-    "/documents/Book.xlsx",
-    "/documents/Mapa.pptx"
+    {
+      "title": "Actividad Fundamental 4",
+      "type": "word",
+      "icon": ["far", "file-word"],
+      "path": "/files/Actividad_Fundamental_4.docx"
+    },
+    {
+      "title": "Modelo Matemático Buscar",
+      "type": "excel",
+      "icon": ["far", "file-excel"],
+      "path": "/files/Modelo_Matematico_Buscar.xlsx"
+    },
+    {
+      "title": "Modelo Matemático Tabla Dinámica Rangos",
+      "type": "excel",
+      "icon": ["far", "file-excel"],
+      "path": "/files/Modelo_Matematico_Tabla_Dinamica_Rangos.xlsx"
+    },
+    {
+      "title": "Presentación ATI",
+      "type": "powerpoint",
+      "icon": ["far", "file-powerpoint"],
+      "path": "/files/Presentacion_ATI.pptx"
+    }
   ],
-  "pdf": ["/documents/Kavalevsky.pdf"]
+  "pdf": ["/documents/Kavalevsky.pdf"],
+  "links": [
+    "https://view.genial.ly/5fc1e151295ceb0d0e30b531/interactive-content-el-desempleo"
+  ]
 }
