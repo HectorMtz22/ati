@@ -14,9 +14,6 @@
 		<section v-for="(r, index) in resources" v-bind:key="index">
 			<iframe loading="lazy" :src='"https://view.officeapps.live.com/op/embed.aspx?src=" + path + r.path' width='100%' height='565px' frameborder='0'> </iframe>
 		</section>
-		<section v-for="(p, index) in pdf" v-bind:key="index">
-			<iframe :src='p.path' width='100%' height='565px' frameborder='0'> </iframe>
-		</section>
 	</main>
 
   </div>
@@ -48,7 +45,16 @@ export default {
 		Content,
 		Prezi,
 		YoutubePlayer
-  }
+  },
+	computed: {
+		path: () => {
+			if (process.env.NODE_ENV === "production")	{
+				return "https://hmtzdev.tech/ati"
+			} else {
+				return "http://localhost:8080"	
+			}
+		}
+	}
 };
 </script>
 

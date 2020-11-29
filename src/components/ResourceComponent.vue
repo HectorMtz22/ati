@@ -49,8 +49,16 @@
 <script>
 import NavBar from '@/components/NavBar';
 import publicPath from '@/isProduction.js';
+
+const urlPath = publicPath();
+
 export default {
 	name: "ResourceComponent",
+	data() {
+		return {
+			publicPath: urlPath
+		}
+	},
 	props: {
 		resources: Array,
 		pdf: Array,
