@@ -11,5 +11,13 @@
   ],
   "img": ["/img/intro-1.png", "/img/intro-2.jpg"],
   "videoId": "yOuwFBdL0c0",
-  "preziId": "iU3hNsYUbXoKaQ700RZi"
+  "preziId": "iU3hNsYUbXoKaQ700RZi",
+  "resources": [
+    {
+      "title": "Modelo Matemático Tabla Dinámica Rangos",
+      "type": "excel",
+      "icon": ["far", "file-excel"],
+      "path": "/files/Modelo_Matematico_Tabla_Dinamica_Rangos.xlsx"
+    }
+  ]
 }

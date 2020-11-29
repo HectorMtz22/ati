@@ -13,20 +13,23 @@
       "path": "/files/Modelo_Matematico_Buscar.xlsx"
     },
     {
-      "title": "Modelo Matemático Tabla Dinámica Rangos",
-      "type": "excel",
-      "icon": ["far", "file-excel"],
-      "path": "/files/Modelo_Matematico_Tabla_Dinamica_Rangos.xlsx"
-    },
-    {
       "title": "Presentación ATI",
       "type": "powerpoint",
       "icon": ["far", "file-powerpoint"],
       "path": "/files/Presentacion_ATI.pptx"
     }
   ],
-  "pdf": ["/documents/Kavalevsky.pdf"],
+  "pdf": [
+    {
+      "title": "Efectos del desempleo",
+      "type": "pdf",
+      "icon": ["far", "file-pdf"],
+      "path": "/files/Efectos_del_Desempleo.pdf"
+    }
+  ],
   "links": [
-    "https://view.genial.ly/5fc1e151295ceb0d0e30b531/interactive-content-el-desempleo"
+    "https://view.genial.ly/5fc1e151295ceb0d0e30b531/interactive-content-el-desempleo",
+    "https://www.forbes.com.mx/economia-tasa-de-desempleo-mexico-llegar-11-7-fin-de-anio-oit/",
+    ""
   ]
 }

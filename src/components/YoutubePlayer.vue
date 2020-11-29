@@ -1,29 +1,28 @@
 <template>
 	<div class="containerYoutube">
-		<youtube width="100%" height="100%" :video-id="videoId" ref="youtube" @playing="playing"></youtube>
+		<youtube width="100%" height="100%" :video-id="videoId" :player-vars="playerVars" @playing="playing"></youtube>
+		<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yOuwFBdL0c0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 		<!-- <button @click="playVideo">play</button> -->
 	</div>
 </template>
 
 <script>
 export default {
-	
+	data() {
+		return {
+			playerVars: {
+		  	autoplay: 1
+			}		
+		}
+	},
 	props: {
 		videoId: String
 	},
 	methods: {
-		playVideo() {
-			this.player.playVideo()
-		},
 		playing() {
 			console.log('\o/ we are watching!!!')
 		}
-  },
-	computed: {
-		player() {
-			return this.$refs.youtube.player
-		}
-	}																									 		
+  },																				 		
 }
 </script>
 

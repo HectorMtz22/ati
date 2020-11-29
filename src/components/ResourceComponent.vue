@@ -5,9 +5,17 @@
 				<h4>Descargables</h4>
 				<aside class="files" v-for="(r) in resources" v-bind:key="r.title" >
 					<section :class="r.type">
-						<a :href="r.path" target="_blank">
+						<a :href="publicPath + r.path" target="_blank">
 							<font-awesome-icon :icon="r.icon" />
 							<span>{{ r.title }}</span>
+						</a>
+					</section>
+				</aside>
+				<aside class="files" v-for="(p) in pdf" v-bind:key="p.title" >
+					<section :class="p.type">
+						<a :href="publicPath + p.path" target="_blank">
+							<font-awesome-icon :icon="p.icon" />
+							<span>{{ p.title }}</span>
 						</a>
 					</section>
 				</aside>
@@ -15,7 +23,7 @@
 				<aside class="files" v-for="(l) in links" v-bind:key="l.title" >
 					<section>
 						<a :href="l" target="_blank">
-							<font-awesome-icon :icon="l.icon" />
+							<!-- <font-awesome-icon :icon="l.icon" /> -->
 							<span>{{ l }}</span>
 						</a>
 					</section>
@@ -28,10 +36,10 @@
 		</main>
 		<main class="opened-resources">
 		<section v-for="(r, index) in resources" v-bind:key="index">
-			<iframe :src='"https://view.officeapps.live.com/op/embed.aspx?src=" + path + r.path' width='100%' height='565px' frameborder='0'> </iframe>
+			<iframe loading="lazy" :src='"https://view.officeapps.live.com/op/embed.aspx?src=" + path + r.path' width='100%' height='565px' frameborder='0'> </iframe>
 		</section>
 		<section v-for="(p, index) in pdf" v-bind:key="index">
-			<iframe :src='p' width='100%' height='565px' frameborder='0'> </iframe>
+			<iframe :src='p.path' width='100%' height='565px' frameborder='0'> </iframe>
 		</section>
 	</main>
 
@@ -40,6 +48,7 @@
 
 <script>
 import NavBar from '@/components/NavBar';
+import publicPath from '@/isProduction.js';
 export default {
 	name: "ResourceComponent",
 	props: {

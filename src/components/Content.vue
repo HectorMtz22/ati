@@ -7,7 +7,7 @@
 			</div>
 		</section>
 		<section v-for="(i, index) in img" v-bind:key="index" >
-			<img :src="path + i" alt="Imagen" loading="lazy">
+			<img :src="publicPath + i" alt="Imagen" loading="lazy">
 		</section>
 	<div>
 		<YoutubePlayer class="video" :videoId="videoId"/>
@@ -19,8 +19,14 @@
 <script>
 import YoutubePlayer from '@/components/YoutubePlayer.vue';
 import NavBar from '@/components/NavBar.vue';
+import publicPath from '@/isProduction.js';
 export default {
 	name: "Content",
+	data() {
+		return {
+			publicPath
+		}
+	},
 	components: {
 		YoutubePlayer,
 		NavBar
@@ -29,15 +35,6 @@ export default {
 		paragraph: Array,
 		img: Array,
 		videoId: String
-	},
-	computed: {
-		path: () => {
-			if (process.env.NODE_ENV === "production")	{
-				return "/ati"
-			} else {
-				return ""	
-			}
-		}
 	}
 }
 </script>
