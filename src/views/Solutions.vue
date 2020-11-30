@@ -7,7 +7,13 @@
 				</div> 
 			</div>
 			<Content :videoId="videoId" :paragraph="paragraph" :img="img" />
-	</div>
+			<main class="datos">
+				<h4>¿Como ayudarnos nosotros mismos?</h4>
+				<p>La tarea de nosotros, como estudiantes, con el objetivo de enfrentar esta problemática y tener mayor posibilidad de encontrar un empleo siempre es y deberá ser estar preparados ante todo, 
+				estudiar y obtener conocimientos sobre cualquier área, leer, adquirir habilidades, capacidades y competencias que nos permitan estar capacitados y sobresalir de la competencia para en caso de obtener una oportunidad, 
+				seamos nosotros quienes obtengamos el trabajo.</p>
+			</main>
+		</div>
 </template>
 
 <script>

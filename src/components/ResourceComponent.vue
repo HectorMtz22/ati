@@ -5,7 +5,7 @@
 				<h4>Descargables</h4>
 				<aside class="navBar files" v-for="(r) in resources" v-bind:key="r.title" >
 					<section :class="r.type" >
-						<a :class="r.type" :href="publicPath + r.path" target="_blank">
+						<a :class="r.type" :href="urlPath + r.path" target="_blank">
 							<font-awesome-icon :icon="r.icon" />
 							<span>{{ r.title }} ({{r.type}})</span>
 						</a>
