@@ -48,7 +48,7 @@
 			<iframe loading="lazy" :src='"https://view.officeapps.live.com/op/embed.aspx?src=" + path + r.path' width='100%' height='565px' frameborder='0'> </iframe>
 		</section>
 		<section v-for="(p, index) in pdf" v-bind:key="index">
-			<iframe :src='p.path' width='100%' height='565px' frameborder='0'> </iframe>
+			<iframe :src='urlPath p.path' width='100%' height='565px' frameborder='0'> </iframe>
 		</section>
 	</main>
 
@@ -58,14 +58,13 @@
 <script>
 import NavBar from '@/components/NavBar';
 import publicPath from '@/isProduction.js';
-
 const urlPath = publicPath();
 
 export default {
 	name: "ResourceComponent",
 	data() {
 		return {
-			publicPath: urlPath
+			urlPath
 		}
 	},
 	props: {
