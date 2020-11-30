@@ -10,6 +10,14 @@
       ]
     }
   ],
+  "pdf": [
+    {
+      "title": "Efectos del desempleo",
+      "type": "pdf",
+      "icon": ["far", "file-pdf"],
+      "path": "/files/Efectos_del_Desempleo.pdf"
+    }
+  ],
   "img": ["/img/factores-1.png", "/img/factores-2.jpg"],
   "videoId": "NsWfTybffxM"
 }
