@@ -13,7 +13,7 @@
 				</aside>
 				<aside class="navBar files" v-for="(p) in pdf" v-bind:key="p.title" >
 					<section :class="p.type">
-						<a :href="publicPath + p.path" target="_blank">
+						<a :href="urlPath + p.path" target="_blank">
 							<font-awesome-icon :icon="p.icon" />
 							<span>{{ p.title }} ({{p.type}})</span>
 						</a>
@@ -48,7 +48,7 @@
 			<iframe loading="lazy" :src='"https://view.officeapps.live.com/op/embed.aspx?src=" + path + r.path' width='100%' height='565px' frameborder='0'> </iframe>
 		</section>
 		<section v-for="(p, index) in pdf" v-bind:key="index">
-			<iframe :src='urlPath p.path' width='100%' height='565px' frameborder='0'> </iframe>
+			<iframe :src='urlPath + p.path' width='100%' height='565px' frameborder='0'> </iframe>
 		</section>
 	</main>
 
