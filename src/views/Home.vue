@@ -6,6 +6,9 @@
     <Banner v-bind:text="textDatos" img="banner-data"/>
 		<main class="datos">
 		<h4>Gráficas dinámicas</h4>
+		<p>Durante la investigación y recopilación de datos estadísticos de nuestra problemática, el desempleo, encontramos ciertos criterios que fueron analizados.</p>
+		<p>En la primera gráfica denominada “Promedio de Población Ocupada por Periodo” podemos observar que, en la última y pasada década, el número de ciudadanos que tiene un empleo ha aumentado y en la gráfica “Promedio de Población Desocupada por Periodo”,</p>
+		<p>el año 2009 fue cuando más ciudadanos no tenían empleo, esto por consecuencia de la conocida “Crisis Económica del 2008”. En los últimos años, el número de personas desocupadas se ha mantenido relativamente estable.</p>
 		<iframe loading="lazy" width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZmMxYzliMGUtMjFiNC00MjYzLTk2OWEtZWU0NDQ4M2ViNWIzIiwidCI6ImNhY2E5MDExLTdiNmEtNDRkZS04NjFmLTA5NWEyY2E4ODNiNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
 		<!-- <iframe loading="lazy" src='https://tradingeconomics.com/embed/?s=mxueunsa&v=202011232300v20200908&ref=/mexico/unemployment-rate' height='400' width='100%'  frameborder='0' scrolling='no'></iframe> 
 		<br />source: <a href='https://tradingeconomics.com/mexico/unemployment-rate'>tradingeconomics.com</a>	-->
@@ -62,5 +65,8 @@ export default {
 .opened-resources {
 	width: 80%;
 	margin: 10px auto;
+}
+.datos {
+	text-align: justify;
 }
 </style>

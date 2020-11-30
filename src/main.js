@@ -15,7 +15,9 @@ import {
   faFileExcel,
   faFilePowerpoint,
   faFilePdf,
+  faFile,
 } from "@fortawesome/free-regular-svg-icons";
+import { faYoutube, faMicrosoft } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 library.add(
@@ -27,7 +29,10 @@ library.add(
   faFileWord,
   faFileExcel,
   faFilePowerpoint,
-  faFilePdf
+  faFilePdf,
+  faFile,
+  faMicrosoft,
+  faYoutube
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

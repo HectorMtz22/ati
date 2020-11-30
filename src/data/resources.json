@@ -1,10 +1,10 @@
 {
   "resources": [
     {
-      "title": "Actividad Fundamental 4",
+      "title": "Problemática que viven los estudiantes para conseguir trabajo en Nuevo León",
       "type": "word",
       "icon": ["far", "file-word"],
-      "path": "/files/Actividad_Fundamental_4.docx"
+      "path": "/files/Problematica_Desempleo_Estudiantes.docx"
     },
     {
       "title": "Modelo Matemático Buscar",
@@ -13,10 +13,16 @@
       "path": "/files/Modelo_Matematico_Buscar.xlsx"
     },
     {
-      "title": "Presentación ATI",
+      "title": "Modelo Matemático Tabla Dinámica Rangos",
+      "type": "excel",
+      "icon": ["far", "file-excel"],
+      "path": "/files/Modelo_Matematico_Tabla_Dinamica_Rangos.xlsx"
+    },
+    {
+      "title": "El Desempleo",
       "type": "powerpoint",
       "icon": ["far", "file-powerpoint"],
-      "path": "/files/Presentacion_ATI.pptx"
+      "path": "/files/El_Desempleo.pptx"
     }
   ],
   "pdf": [
@@ -28,8 +34,89 @@
     }
   ],
   "links": [
-    "https://view.genial.ly/5fc1e151295ceb0d0e30b531/interactive-content-el-desempleo",
-    "https://www.forbes.com.mx/economia-tasa-de-desempleo-mexico-llegar-11-7-fin-de-anio-oit/",
-    ""
+    {
+      "title": "Desempleo Juvenil",
+      "type": "video",
+      "icon": ["fab", "youtube"],
+      "path": "https://www.youtube.com/watch?v=yOuwFBdL0c0"
+    },
+    {
+      "title": "El desempleo Animado",
+      "type": "video",
+      "icon": ["fab", "youtube"],
+      "path": "https://www.youtube.com/watch?v=Ul52MdiSE_8"
+    },
+    {
+      "title": "8 errores de los recién egresados al buscar su primer empleo",
+      "type": "video",
+      "icon": ["fab", "youtube"],
+      "path": "https://www.youtube.com/watch?v=NsWfTybffxM"
+    },
+    {
+      "title": "Alternativas para combatir el desempleo",
+      "type": "video",
+      "icon": ["fab", "youtube"],
+      "path": "https://www.youtube.com/watch?v=tr-VWduxhUc"
+    },
+    {
+      "title": "Problematica que viven los estudiantes para conseguir trabajo en Nuevo León",
+      "type": "preziresource",
+      "icon": ["far", "file"],
+      "path": "https://prezi.com/view/iU3hNsYUbXoKaQ700RZi/"
+    },
+    {
+      "title": "Gráficos Población empleada y desempleada",
+      "type": "powerbi",
+      "icon": ["fab", "microsoft"],
+      "path": "https://app.powerbi.com/view?r=eyJrIjoiZmMxYzliMGUtMjFiNC00MjYzLTk2OWEtZWU0NDQ4M2ViNWIzIiwidCI6ImNhY2E5MDExLTdiNmEtNDRkZS04NjFmLTA5NWEyY2E4ODNiNyIsImMiOjR9"
+    },
+    {
+      "title": "Gráficos Población que estudia Media Superior, Superior y Posgrado",
+      "type": "powerbi",
+      "icon": ["fab", "microsoft"],
+      "path": "https://app.powerbi.com/view?r=eyJrIjoiMWU3YzY4YmItMTg4Yi00YzFhLTgzNGYtNzIwMjMzMDEzM2I1IiwidCI6ImNhY2E5MDExLTdiNmEtNDRkZS04NjFmLTA5NWEyY2E4ODNiNyIsImMiOjR9"
+    },
+    {
+      "title": "Infografía sobre el desempleo",
+      "type": "genial.ly",
+      "icon": ["far", "file"],
+      "path": "https://view.genial.ly/5fc1e151295ceb0d0e30b531/interactive-content-el-desempleo"
+    },
+    {
+      "title": "Noticia sobre Tasa de desempleo en México",
+      "type": "forbes",
+      "icon": ["far", "file"],
+      "path": "https://www.forbes.com.mx/economia-tasa-de-desempleo-mexico-llegar-11-7-fin-de-anio-oit/"
+    }
+  ],
+  "biblio": [
+    {
+      "title": "Española, R. A. (s.f.). dpej.rae.es. Obtenido de https://dpej.rae.es/lema/desempleo#:~: text=Lab.,su%20jornada%20ordinaria%20de%20trabajo.",
+      "path": "https://dpej.rae.es/lema/desempleo#:~:text=Lab.,su%20jornada%20ordinaria%20de%20trabajo."
+    },
+    {
+      "title": "INEGI. (2020). DATA Nuevo León. Obtenido de http://datos.nl.gob.mx/n-l-enoe- composicion-de-la-poblacion-economicamente-activa-y-tasa-de-desempleo/",
+      "path": "http://datos.nl.gob.mx/n-l-enoe-composicion-de-la-poblacion-economicamente-activa-y-tasa-de-desempleo/"
+    },
+    {
+      "title": "Rodriguez, L. (Diciembre de 2014). scielo. Obtenido de http://www.scielo.org.mx/scielo.php ?script=sci_arttext&pid =S1870-46702014000200133",
+      "path": "http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1870-46702014000200133"
+    },
+    {
+      "title": "Secretaría de Educación Pública (SEP). Sistema Nacional de Información Estadística Educativa. (2020). DATA NUEVO LEÓN. Obtenido de http://datos.nl.gob.mx/n-l-matricula -de-alumnos-inscritos-por -nivel-educativo/",
+      "path": "http://datos.nl.gob.mx/n-l-matricula-de-alumnos-inscritos-por-nivel-educativo/"
+    },
+    {
+      "title": "Universidad del Valle de México. (25 de Septiembre de 2019). opinionpublica.uvm.mx. Obtenido de https://opinionpublica.uvm.mx /estudios/encuesta-nacional -de-egresados-2019",
+      "path": "https://opinionpublica.uvm.mx/estudios/encuesta-nacional-de-egresados-2019"
+    },
+    {
+      "title": "Ruiz Nápoles, Pablo, & Ordaz Díaz, Juan Luis (2011). Evolución reciente del empleo y el desempleo en México. Economíaunam, 8(23),91-105. [fecha de Consulta 28 de noviembre de 2020]. ISSN: 1665-952X. Disponible en:   https://www.redalyc.org /pdf/3635/363533411005.pdf",
+      "path": "https://www.redalyc.org/pdf/3635/363533411005.pdf"
+    },
+    {
+      "title": "MÁRQUEZ-SCOTTI, Clara (2015). Determinantes del desempleo en las urbes mexicanas. Continuidades y rupturas en el periodo de crisis. Papeles de Población, 21(83),101-134. [fecha de Consulta 28 de noviembre de 2020]. ISSN: 1405-7425. Disponible en:  https://www.redalyc.org/pdf /112/11234130005.pdf",
+      "path": "https://www.redalyc.org/pdf/112/11234130005.pdf"
+    }
   ]
 }

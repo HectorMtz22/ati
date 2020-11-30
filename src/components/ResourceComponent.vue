@@ -3,28 +3,37 @@
 		<main class="grid">
 			<section>
 				<h4>Descargables</h4>
-				<aside class="files" v-for="(r) in resources" v-bind:key="r.title" >
-					<section :class="r.type">
-						<a :href="publicPath + r.path" target="_blank">
+				<aside class="navBar files" v-for="(r) in resources" v-bind:key="r.title" >
+					<section :class="r.type" >
+						<a :class="r.type" :href="publicPath + r.path" target="_blank">
 							<font-awesome-icon :icon="r.icon" />
-							<span>{{ r.title }}</span>
+							<span>{{ r.title }} ({{r.type}})</span>
 						</a>
 					</section>
 				</aside>
-				<aside class="files" v-for="(p) in pdf" v-bind:key="p.title" >
+				<aside class="navBar files" v-for="(p) in pdf" v-bind:key="p.title" >
 					<section :class="p.type">
 						<a :href="publicPath + p.path" target="_blank">
 							<font-awesome-icon :icon="p.icon" />
-							<span>{{ p.title }}</span>
+							<span>{{ p.title }} ({{p.type}})</span>
 						</a>
 					</section>
 				</aside>
-				<h4>Links</h4>
-				<aside class="files" v-for="(l) in links" v-bind:key="l.title" >
+				<h4>Recursos Utilizados</h4>
+				<aside class="navBar files" v-for="(l) in links" v-bind:key="l.title" >
+					<section :class="l.type" >
+						<a :href="l.path" target="_blank">
+							<font-awesome-icon :icon="l.icon" />
+							<span>{{ l.title }} ({{ l.type }})</span>
+						</a>
+					</section>
+				</aside>
+				<h4>Bibliografía</h4>
+				<aside class="navBar files" v-for="(b) in biblio" v-bind:key="b.title" >
 					<section>
-						<a :href="l" target="_blank">
+						<a :href="b.path" target="_blank">
 							<!-- <font-awesome-icon :icon="l.icon" /> -->
-							<span>{{ l }}</span>
+							<span>{{ b.title }}</span>
 						</a>
 					</section>
 				</aside>
@@ -62,7 +71,8 @@ export default {
 	props: {
 		resources: Array,
 		pdf: Array,
-		links: Array
+		links: Array,
+		biblio: Array
 	},
 	components: {
 		NavBar
@@ -86,13 +96,32 @@ export default {
 	margin: 10px auto;
 }
 .files {
+	position: relative;
+	top: 0;
+	--word: #005DA6;
+	--excel: #1D6F42;
+	--powerpoint: #D04423;
+	--pdf: #ED2224;
+	--video: #ff0000;
+	--preziresource: #318bff;
+	--powerbi: #f2c80f;
+	.word { background: var(--word); }
+	.excel { background: var(--excel); }
+	.powerpoint { background: var(--powerpoint); }
+	.pdf { background: var(--pdf); }
+	.video { background: var(--video); };
+	.preziresource { background: var(--preziresource); };
+	.powerbi { background: var(--powerbi); };
 	border-radius: 10px;
-	padding: 10px;
-	margin: 10px auto;
 	background: #000;
 	color: #fff;
 	span {
 		padding-left: 5px;
 	}
+	section	a:hover{
+			transform: scale(1.1);
+			filter: brightness(0.8);
+	}
 }
+
 </style>
